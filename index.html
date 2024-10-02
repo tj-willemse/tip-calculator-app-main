@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="image-div">
+      <img src="./public/logo.svg" alt="icon" class="logo" />
+    </div>
+    <div class="main-box container">
+      <section class="segment-one-box container">
+        <h4 class="bill-title">Bill</h4>
+
+        <input
+          type="number"
+          name=""
+          id="input-bill"
+          class="bill-input"
+          placeholder="0"
+        />
+
+        <h4 class="select-tip-title">Select Tip %</h4>
+
+        <div class="tip-button-box">
+          <button class="tip-button" value="5">5%</button>
+
+          <button class="tip-button" value="10">10%</button>
+
+          <button class="tip-button" value="15">15%</button>
+
+          <button class="tip-button" value="25">25%</button>
+
+          <button class="tip-button" value="50">50%</button>
+
+          <input
+            type="number"
+            name=""
+            class="tip-button-custom"
+            id="custom-tip"
+            placeholder="Custom"
+          />
+        </div>
+        <div class="people-text-box">
+          <h4 class="people-number-title">Number of People</h4>
+          <p
+            class="people-number-invalid"
+            id="invalid-input-text"
+            style="display: none"
+          >
+            can't be zero
+          </p>
+        </div>
+
+        <input
+          type="number"
+          name=""
+          id="input-people"
+          class="people-input"
+          placeholder="0"
+        />
+      </section>
+
+      <section class="segment-two-box">
+        <div class="tip-amount-box">
+          <div>
+            <h4 class="segment-two-text-one">Tip Amount</h4>
+            <p class="segment-two-text-two">/person</p>
+          </div>
+          <span class="tip-total" id="total-tip">$0.00</span>
+        </div>
+
+        <div class="total-person-box">
+          <div>
+            <h4 class="segment-two-text-one">Total</h4>
+            <p class="segment-two-text-two">/ person</p>
+          </div>
+          <span class="total-person-tip" id="person-total-tip">$0.00</span>
+        </div>
+
+        <button class="reset-button">Reset</button>
+      </section>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
