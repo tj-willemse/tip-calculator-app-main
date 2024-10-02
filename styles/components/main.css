@@ -314,7 +314,15 @@
 }
 
 /* xL */
-/* @media (min-width: 1280px) {}  */
+@media (min-width: 1280px) {
+  body {
+    padding: 200px;
+  }
+}
 
 /* 2xL */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 1536px) {
+  body {
+    padding: 300px;
+  }
+}
