@@ -189,6 +189,9 @@
     justify-content: space-between;
     font-size: var(--size-base);
   }
+  .main-box {
+    height: 100vh;
+  }
 }
 
 /* Sm */
